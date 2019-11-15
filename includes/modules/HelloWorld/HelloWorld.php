@@ -808,13 +808,13 @@
 			}
 		}
 
-		if ( $is_single ) {
-			$main_query_post = ET_Post_Stack::get_main_post();
+		// if ( $is_single ) {
+		// 	$main_query_post = ET_Post_Stack::get_main_post();
 
-			if ( null !== $main_query_post ) {
-				$query_args['post__not_in'][] = $main_query_post->ID;
-			}
-		}
+		// 	if ( null !== $main_query_post ) {
+		// 		$query_args['post__not_in'][] = $main_query_post->ID;
+		// 	}
+		// }
 
 		// Get query
 		$query = new WP_Query( $query_args );
@@ -1119,14 +1119,6 @@
 
 	function render( $attrs, $content = null, $render_slug ) {
 		global $post, $paged, $wp_query, $wp_filter, $__et_blog_module_paged;
-
-		if ( self::$rendering ) {
-			// We are trying to render a Blog module while a Blog module is already being rendered
-			// which means we have most probably hit an infinite recursion. While not necessarily
-			// the case, rendering a post which renders a Blog module which renders a post
-			// which renders a Blog module is not a sensible use-case.
-			return '';
-		}
 
 		// Stored current global post as variable so global $post variable can be restored
 		// to its original state when et_pb_blog shortcode ends to avoid incorrect global $post
