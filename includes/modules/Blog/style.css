@@ -1,0 +1,55 @@
+/*--------------------------------------------------------*/
+/*-----Author Avatar on Grid Blog Module by Divi Soup-----*/
+/*--------------------------------------------------------*/
+
+/*Set the image postion and width*/
+
+.ds-avatar-grid .ds-avatar {
+    width: 64px;
+    float: left;
+    margin-right: 15px;
+}
+
+/*Make the image round - remove this declaration if you want a square image*/
+
+.ds-avatar-grid .ds-avatar img {
+    border-radius: 50%;
+}
+
+/*Clear the float so the excerpt sits below the avatar*/
+
+.ds-avatar-grid .post-content {
+    clear: left;
+}
+
+/*--------------------------------------------------------*/
+/*---End Author Avatar on Grid Blog Module by Divi Soup---*/
+/*--------------------------------------------------------*/
+
+/*-------------------------------------------------------------*/
+/*-----Author Avatar on Fullwidth Blog Module by Divi Soup-----*/
+/*-------------------------------------------------------------*/
+
+/*Set the image postion and width*/
+
+.ds-avatar-fullwidth .ds-avatar {
+    width: 64px;
+    float: left;
+    margin: 30px 15px 0 0;
+}
+
+/*Make the image round - remove this declaration if you want a square image*/
+
+.ds-avatar-fullwidth .ds-avatar img {
+    border-radius: 50%;
+}
+
+/*Clear the float so the excerpt sits below the avatar*/
+
+.ds-avatar-fullwidth .post-content {
+    clear: left;
+}
+
+/*-------------------------------------------------------------*/
+/*---End Author Avatar on Fullwidth Blog Module by Divi Soup---*/
+/*-------------------------------------------------------------*/

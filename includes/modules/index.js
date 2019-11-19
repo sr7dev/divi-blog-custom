@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import Blog from './Blog/Blog';
 
-export default [HelloWorld];
+export default [Blog];
